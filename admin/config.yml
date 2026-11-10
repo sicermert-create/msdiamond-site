@@ -6,7 +6,7 @@
 # base_url, admin/index.html içinde sitenin kendi adresine ayarlanır.
 backend:
   name: github
-  repo: KULLANICI_ADI/msdiamond-site
+  repo: sicermert-create/msdiamond-site
   branch: main
   auth_endpoint: api/auth
   commit_messages:
