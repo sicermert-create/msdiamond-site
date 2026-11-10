@@ -1,0 +1,16 @@
+// Ms. Diamond Coiffure — Cloudflare Worker ayarları
+// Site dosyaları public/ klasöründe; panel girişi src/worker.js içinde.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "msdiamond-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Panel girişi Worker kodundan geçsin, diğer her şey doğrudan dosyalardan sunulsun
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true }
+}

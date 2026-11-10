@@ -2,7 +2,7 @@
 #
 # YAYINA ALIRKEN: aşağıdaki "repo" satırını kendi GitHub deponuzla değiştirin
 # (ör. kullaniciadi/msdiamond-site). Giriş, sitenin kendi /api/auth adresinden
-# (functions/api klasörü, Cloudflare Pages) GitHub ile yapılır.
+# (src/worker.js, Cloudflare Worker) GitHub ile yapılır.
 # base_url, admin/index.html içinde sitenin kendi adresine ayarlanır.
 backend:
   name: github
@@ -13,7 +13,8 @@ backend:
     update: "Panel: {{collection}} güncellendi"
     uploadMedia: "Panel: fotoğraf yüklendi ({{path}})"
 
-# Bilgisayarda denemek için: proje klasöründe "npx decap-server" çalıştırın.
+# Bilgisayarda denemek için: proje klasöründe "npx decap-server" çalıştırın,
+# siteyi "npx wrangler dev" ile açın ve /admin adresine gidin.
 local_backend: true
 
 locale: tr
@@ -21,7 +22,7 @@ site_url: https://www.msdiamondnevsehir.com
 display_url: https://www.msdiamondnevsehir.com
 logo_url: /favicon.svg
 
-media_folder: img/uploads
+media_folder: public/img/uploads
 public_folder: /img/uploads
 
 collections:
@@ -32,7 +33,7 @@ collections:
     files:
       - name: content
         label: Tüm Site İçeriği
-        file: content/site.json
+        file: public/content/site.json
         format: json
         fields:
 
