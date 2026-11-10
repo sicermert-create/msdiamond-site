@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Marka Kılavuzu | Ms. Diamond Coiffure</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#F2ECE2;color:#16131A;font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.7}
+.wrap{width:min(1100px,100% - 32px);margin-inline:auto;padding:80px 0}
+.k{font-size:.68rem;letter-spacing:.4em;text-transform:uppercase;color:#8A6C33}
+h1{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1;margin:14px 0 60px}
+h2{font-family:"Bodoni Moda",serif;font-weight:400;font-size:1.8rem;margin:70px 0 22px;border-top:1px solid rgba(22,19,26,.15);padding-top:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:start}
+.tile{border:1px solid rgba(22,19,26,.12);background:#fff}
+.tile img{width:100%;display:block}
+.tile p{padding:12px 16px;font-size:.8rem;color:#6F6670;border-top:1px solid rgba(22,19,26,.08)}
+.tile p a{color:#8A6C33}
+.mark{background:#0A090C;display:grid;place-items:center;padding:40px}
+.mark img{width:150px}
+.sw{height:120px}
+.type{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.type div{background:#fff;border:1px solid rgba(22,19,26,.12);padding:30px}
+.type .a{font-family:"Bodoni Moda",serif;font-size:3rem;line-height:1}
+.type .b{font-family:Jost,sans-serif;font-size:2rem;line-height:1.2;font-weight:300}
+small{color:#6F6670}
+@media(max-width:640px){.type{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="k">Ms. Diamond Coiffure</span>
+  <h1>Marka Kılavuzu</h1>
+
+  <h2>Logo</h2>
+  <div class="grid">
+    <div class="tile"><img src="logo-dark.svg" alt="Koyu zemin logo"><p>Koyu zemin · <a href="logo-dark.svg" download>SVG indir</a></p></div>
+    <div class="tile"><img src="logo-light.svg" alt="Açık zemin logo"><p>Açık zemin · <a href="logo-light.svg" download>SVG indir</a></p></div>
+    <div class="tile"><div class="mark"><img src="logo-mark.svg" alt="Amblem"></div><p>Amblem (profil fotoğrafı, ikon) · <a href="logo-mark.svg" download>SVG indir</a></p></div>
+  </div>
+
+  <h2>Renkler</h2>
+  <div class="grid">
+    <div class="tile"><div class="sw" style="background:#0A090C"></div><p>Noir · #0A090C</p></div>
+    <div class="tile"><div class="sw" style="background:#F2ECE2"></div><p>Fildişi · #F2ECE2</p></div>
+    <div class="tile"><div class="sw" style="background:linear-gradient(110deg,#EED9A8,#C9A462,#8A6C33)"></div><p>Altın · #C9A462 (açık #EED9A8 · koyu #8A6C33)</p></div>
+    <div class="tile"><div class="sw" style="background:#7652B4"></div><p>Ametist vurgu · #7652B4 (sadece ışık efektlerinde)</p></div>
+  </div>
+
+  <h2>Yazı Tipleri</h2>
+  <div class="type">
+    <div><div class="a">Bodoni <em>Moda</em></div><small>Başlıklar ve logo · Google Fonts</small></div>
+    <div><div class="b">Jost Light</div><small>Metinler, menüler, etiketler · Google Fonts</small></div>
+  </div>
+</div>
+</body>
+</html>

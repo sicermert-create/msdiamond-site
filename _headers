@@ -1,0 +1,29 @@
+# Ms. Diamond Coiffure — Cloudflare Pages başlıkları
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/img/*
+  Cache-Control: public, max-age=2592000
+
+/js/*
+  Cache-Control: public, max-age=86400
+
+/content/*
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+
+/admin/*
+  X-Robots-Tag: noindex
+  Cache-Control: no-cache
+
+/*.md
+  X-Robots-Tag: noindex

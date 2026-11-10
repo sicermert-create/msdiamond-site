@@ -1,0 +1,21 @@
+{
+  "name": "Ms. Diamond Coiffure",
+  "short_name": "Ms. Diamond",
+  "description": "Nevşehir'de kadınlara özel kuaför ve güzellik merkezi. Randevu için WhatsApp: 0541 276 11 20",
+  "lang": "tr",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A090C",
+  "theme_color": "#0A090C",
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/img/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Randevu Al", "url": "/#randevu" },
+    { "name": "Hizmetler", "url": "/#hizmetler" }
+  ]
+}

@@ -1,0 +1,196 @@
+# Ms. Diamond Coiffure — Yönetim paneli ayarları (Decap CMS)
+#
+# YAYINA ALIRKEN: aşağıdaki "repo" satırını kendi GitHub deponuzla değiştirin
+# (ör. kullaniciadi/msdiamond-site). Giriş, sitenin kendi /api/auth adresinden
+# (functions/api klasörü, Cloudflare Pages) GitHub ile yapılır.
+# base_url, admin/index.html içinde sitenin kendi adresine ayarlanır.
+backend:
+  name: github
+  repo: KULLANICI_ADI/msdiamond-site
+  branch: main
+  auth_endpoint: api/auth
+  commit_messages:
+    update: "Panel: {{collection}} güncellendi"
+    uploadMedia: "Panel: fotoğraf yüklendi ({{path}})"
+
+# Bilgisayarda denemek için: proje klasöründe "npx decap-server" çalıştırın.
+local_backend: true
+
+locale: tr
+site_url: https://www.msdiamondnevsehir.com
+display_url: https://www.msdiamondnevsehir.com
+logo_url: /favicon.svg
+
+media_folder: img/uploads
+public_folder: /img/uploads
+
+collections:
+  - name: site
+    label: Site İçeriği
+    editor:
+      preview: false
+    files:
+      - name: content
+        label: Tüm Site İçeriği
+        file: content/site.json
+        format: json
+        fields:
+
+          - label: Duyuru Şeridi
+            name: announcement
+            widget: object
+            hint: "Sitenin en üstünde altın renkli bir şerit olarak görünür. Kampanya, tatil, yeni hizmet duyurusu için kullanın."
+            fields:
+              - { label: "Göster", name: enabled, widget: boolean, default: false }
+              - { label: "Duyuru (TR)", name: text_tr, widget: string, required: false }
+              - { label: "Announcement (EN)", name: text_en, widget: string, required: false }
+              - { label: "Bağlantı", name: link, widget: string, required: false, default: "#randevu", hint: "Tıklanınca gidilecek yer. #randevu = randevu formu. Başka bir site adresi de yazılabilir." }
+
+          - label: İletişim ve Çalışma Saatleri
+            name: contact
+            widget: object
+            collapsed: false
+            fields:
+              - { label: "WhatsApp numarası", name: whatsapp, widget: string, hint: "Ülke koduyla, boşluksuz yazın. Örnek: 905412761120" }
+              - { label: "Sitede görünen telefon", name: phone_display, widget: string, hint: "Örnek: 0541 276 11 20" }
+              - { label: "Instagram kullanıcı adı", name: instagram, widget: string, hint: "@ işareti olmadan. Örnek: msdiamond_sercancevik" }
+              - { label: "Çalışma saatleri (Türkçe)", name: hours_tr, widget: string, hint: "Örnek: Pazartesi – Cumartesi · 09:00 – 19:30" }
+              - { label: "Çalışma saatleri (İngilizce)", name: hours_en, widget: string, hint: "Örnek: Monday – Saturday · 09:00 – 19:30" }
+              - label: "Açık olunan günler"
+                name: open_days
+                widget: select
+                multiple: true
+                hint: "'Şu an açık / kapalı' göstergesi bu günlere göre çalışır."
+                options:
+                  - { label: Pazartesi, value: "1" }
+                  - { label: Salı, value: "2" }
+                  - { label: Çarşamba, value: "3" }
+                  - { label: Perşembe, value: "4" }
+                  - { label: Cuma, value: "5" }
+                  - { label: Cumartesi, value: "6" }
+                  - { label: Pazar, value: "7" }
+              - { label: "Açılış saati", name: open_time, widget: string, pattern: ['^\d{2}:\d{2}$', "SS:DD biçiminde yazın, örnek 09:00"] }
+              - { label: "Kapanış saati", name: close_time, widget: string, pattern: ['^\d{2}:\d{2}$', "SS:DD biçiminde yazın, örnek 19:30"] }
+              - { label: "Randevu e-posta anahtarı (Web3Forms)", name: form_key, widget: string, required: false, hint: "Doluysa her randevu e-postanıza da gelir. web3forms.com adresinden ücretsiz alınır." }
+              - { label: "Google puanı", name: google_rating, widget: string, hint: "Google'daki güncel puan. Örnek: 4,8" }
+              - { label: "Google yorum sayısı", name: google_reviews, widget: number, value_type: int, min: 0 }
+
+          - label: Ana Fotoğraflar
+            name: images
+            widget: object
+            fields:
+              - { label: "Giriş (kemer) fotoğrafı", name: hero, widget: image, hint: "Dikey fotoğraf önerilir." }
+              - { label: "Felsefe bölümü fotoğrafı", name: philosophy, widget: image, hint: "Dikey fotoğraf önerilir." }
+              - { label: "Salonumuz fotoğrafı", name: salon, widget: image }
+              - { label: "Giriş videosu (isteğe bağlı)", name: hero_video, widget: file, required: false, media_library: { config: { multiple: false } }, hint: "5-10 saniyelik, sessiz, dikey MP4 video. Eklenirse giriş fotoğrafının yerine oynar. 8 MB altında tutun." }
+
+          - label: Metinler
+            name: texts
+            widget: object
+            hint: "Bir kelimeyi italik/altın yapmak için yıldız içine alın: *elmas*"
+            fields:
+              - label: Türkçe
+                name: tr
+                widget: object
+                fields:
+                  - { label: "Başlık – 1. satır", name: h1a, widget: string }
+                  - { label: "Başlık – 2. satır (altın)", name: h1b, widget: string }
+                  - { label: "Başlık – 3. satır", name: h1c, widget: string }
+                  - { label: "Giriş paragrafı", name: heroP, widget: text }
+                  - { label: "Felsefe – büyük metin", name: maniW, widget: text }
+                  - { label: "Felsefe – 1. paragraf", name: maniP1, widget: text }
+                  - { label: "Felsefe – 2. paragraf", name: maniP2, widget: text }
+                  - { label: "Salonumuz paragrafı", name: salonP, widget: text }
+                  - { label: "Fiyat notu", name: priceNote, widget: text }
+              - label: İngilizce
+                name: en
+                widget: object
+                fields:
+                  - { label: "Headline – line 1", name: h1a, widget: string }
+                  - { label: "Headline – line 2 (gold)", name: h1b, widget: string }
+                  - { label: "Headline – line 3", name: h1c, widget: string }
+                  - { label: "Intro paragraph", name: heroP, widget: text }
+                  - { label: "Philosophy – large text", name: maniW, widget: text }
+                  - { label: "Philosophy – paragraph 1", name: maniP1, widget: text }
+                  - { label: "Philosophy – paragraph 2", name: maniP2, widget: text }
+                  - { label: "Salon paragraph", name: salonP, widget: text }
+                  - { label: "Price note", name: priceNote, widget: text }
+
+          - label: Hizmetler
+            name: services
+            widget: list
+            label_singular: hizmet
+            summary: "{{fields.title_tr}} {{fields.subtitle_tr}}"
+            hint: "Sırayı sürükleyerek değiştirebilir, yeni hizmet ekleyebilirsiniz."
+            fields:
+              - { label: "Başlık (TR)", name: title_tr, widget: string }
+              - { label: "Başlığın italik kısmı (TR)", name: subtitle_tr, widget: string, required: false, hint: "Örnek: & Şekillendirme" }
+              - { label: "Kısa açıklama (TR)", name: short_tr, widget: string }
+              - { label: "Detaylı açıklama (TR)", name: detail_tr, widget: text }
+              - { label: "Etiketler (TR)", name: tags_tr, widget: list, hint: "Virgülle ayırın: Kadın kesim, Fön, Örgü" }
+              - { label: "Fiyat (TR, isteğe bağlı)", name: price_tr, widget: string, required: false, hint: "Boş bırakılırsa fiyat gösterilmez. Örnek: 750 ₺'den başlayan" }
+              - { label: "Fotoğraf", name: image, widget: image }
+              - { label: "Title (EN)", name: title_en, widget: string, required: false }
+              - { label: "Title italic part (EN)", name: subtitle_en, widget: string, required: false }
+              - { label: "Short description (EN)", name: short_en, widget: string, required: false }
+              - { label: "Detail (EN)", name: detail_en, widget: text, required: false }
+              - { label: "Tags (EN)", name: tags_en, widget: list, required: false }
+              - { label: "Price (EN, optional)", name: price_en, widget: string, required: false, hint: "Example: from 750 ₺" }
+
+          - label: Önce / Sonra
+            name: before_after
+            widget: list
+            label_singular: dönüşüm
+            summary: "{{fields.caption_tr}}"
+            hint: "Aynı kişinin işlem öncesi ve sonrası fotoğrafları (aynı açıdan çekilmiş olmalı). Müşterinin iznini alın. Liste boşsa bölüm görünmez."
+            fields:
+              - { label: "Önce fotoğrafı", name: before, widget: image }
+              - { label: "Sonra fotoğrafı", name: after, widget: image }
+              - { label: "Başlık (TR)", name: caption_tr, widget: string, required: false, hint: "Örnek: Balyaj + keratin" }
+              - { label: "Caption (EN)", name: caption_en, widget: string, required: false }
+
+          - label: Ekibimiz
+            name: team
+            widget: list
+            label_singular: kişi
+            summary: "{{fields.name}}"
+            hint: "Fotoğraf eklenmezse ismin baş harfleri gösterilir. Tüm kişileri silerseniz bölüm gizlenir."
+            fields:
+              - { label: "Ad Soyad", name: name, widget: string }
+              - { label: "Ünvan (TR)", name: role_tr, widget: string, required: false, hint: "Örnek: Kurucu · Saç Tasarımcısı" }
+              - { label: "Title (EN)", name: role_en, widget: string, required: false }
+              - { label: "Kısa tanıtım (TR)", name: bio_tr, widget: text, required: false }
+              - { label: "Short bio (EN)", name: bio_en, widget: text, required: false }
+              - { label: "Fotoğraf", name: photo, widget: image, required: false, hint: "Dikey portre önerilir." }
+
+          - label: Müşteri Yorumları
+            name: reviews
+            widget: list
+            label_singular: yorum
+            summary: "{{fields.author}}"
+            hint: "Yalnızca gerçek ve izin alınmış yorumları ekleyin (ör. Google yorumlarınızdan). Liste boşsa bölüm görünmez."
+            fields:
+              - { label: "Yorum metni", name: text, widget: text }
+              - { label: "Yorumu yapan", name: author, widget: string, hint: "Örnek: Ayşe K." }
+              - { label: "Kaynak", name: source, widget: string, required: false, default: "Google" }
+
+          - label: Lookbook Galerisi
+            name: gallery
+            widget: list
+            label_singular: fotoğraf
+            summary: "{{fields.caption_tr}}"
+            fields:
+              - { label: "Fotoğraf", name: image, widget: image }
+              - { label: "Başlık (TR)", name: caption_tr, widget: string }
+              - { label: "Caption (EN)", name: caption_en, widget: string, required: false }
+
+          - label: Sıkça Sorulan Sorular
+            name: faq
+            widget: list
+            label_singular: soru
+            summary: "{{fields.q_tr}}"
+            fields:
+              - { label: "Soru (TR)", name: q_tr, widget: string }
+              - { label: "Cevap (TR)", name: a_tr, widget: text }
+              - { label: "Question (EN)", name: q_en, widget: string, required: false }
+              - { label: "Answer (EN)", name: a_en, widget: text, required: false }

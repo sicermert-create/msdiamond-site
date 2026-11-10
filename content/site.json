@@ -1,0 +1,292 @@
+{
+  "announcement": {
+    "enabled": false,
+    "text_tr": "Gelin sezonu randevuları açıldı · Prova için hemen yazın",
+    "text_en": "Bridal season bookings are open · Message us for a trial",
+    "link": "#randevu"
+  },
+  "contact": {
+    "open_time": "09:00",
+    "google_rating": "4,8",
+    "open_days": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hours_tr": "Pazartesi – Cumartesi · 09:00 – 19:30",
+    "phone_display": "0541 276 11 20",
+    "whatsapp": "905412761120",
+    "instagram": "msdiamond_sercancevik",
+    "close_time": "19:30",
+    "google_reviews": 258,
+    "hours_en": "Monday – Saturday · 09:00 – 19:30",
+    "form_key": ""
+  },
+  "images": {
+    "hero": "/img/uploads/hero.webp",
+    "philosophy": "/img/uploads/felsefe.webp",
+    "salon": "/img/uploads/salon-dis.jpg",
+    "hero_video": ""
+  },
+  "texts": {
+    "tr": {
+      "maniW": "Gerçek güzellik bir *elmas* gibidir. Doğru ellerde, sabırla ve özenle işlendiğinde ortaya çıkar. Biz her misafirimizi dinleyerek başlar, ona en çok yakışanı *birlikte* tasarlarız.",
+      "maniP1": "Ms. Diamond, Nevşehir Merkez'de kadınlara özel kuaför ve güzellik merkezi. Yüz hatlarınıza, saç yapınıza ve yaşam tarzınıza uygun, kişiye özel sonuçlar.",
+      "maniP2": "Profesyonel ürünler, hijyenik bir ortam ve deneyimli bir ekip. Salondan çıktığınızda yalnızca saçınız değil, kendinizi de yenilenmiş hissetmeniz için.",
+      "salonP": "Milli İrade Caddesi üzerindeki salonumuzda sizi sakin, ferah ve özenli bir ortamda ağırlıyoruz. Kapadokya'yı ziyaret eden misafirlerimizi de memnuniyetle bekliyoruz.",
+      "heroP": "Kesimden renge, bakımdan gelin saçına; her detayın bir elmas titizliğiyle işlendiği, kadınlara özel bir güzellik deneyimi.",
+      "h1a": "Saçınız,",
+      "h1b": "en değerli",
+      "h1c": "mücevheriniz.",
+      "priceNote": "Fiyatlar saç uzunluğu ve uygulamaya göre değişir; WhatsApp'tan bilgi alabilirsiniz."
+    },
+    "en": {
+      "maniW": "True beauty is like a *diamond*. It is revealed when shaped with patience and care, by the right hands. We begin by listening, then design what suits you best, *together*.",
+      "maniP1": "Ms. Diamond is a women-only hair and beauty salon in central Nevşehir, gateway to Cappadocia. Personal results tailored to your features, hair type and lifestyle.",
+      "maniP2": "Professional products, a hygienic space and an experienced team, so you leave feeling renewed, not just restyled.",
+      "salonP": "We welcome you in a calm, airy and caring space on Milli İrade Avenue. Guests visiting Cappadocia are warmly welcome too.",
+      "heroP": "From cut to colour, from care to bridal styling, a women-only beauty experience where every detail is crafted with the precision of a diamond.",
+      "h1a": "Your hair,",
+      "h1b": "your most precious",
+      "h1c": "jewel.",
+      "priceNote": "Prices vary with hair length and treatment; ask us on WhatsApp."
+    }
+  },
+  "services": [
+    {
+      "short_tr": "Yüz hatlarınıza uygun modern kesimler ve şekillendirme.",
+      "tags_tr": [
+        "Kadın kesim",
+        "Fön",
+        "Maşa & dalga",
+        "Örgü"
+      ],
+      "subtitle_tr": "& Şekillendirme",
+      "title_tr": "Kesim",
+      "detail_tr": "Saç yapınızı ve yüz şeklinizi değerlendirerek size en çok yakışan formu birlikte belirliyoruz. Günlük kullanıma uygun, kolay şekil alan kesimler.",
+      "short_en": "Modern cuts and styling shaped to your features.",
+      "tags_en": [
+        "Women's cut",
+        "Blow-dry",
+        "Curls & waves",
+        "Braids"
+      ],
+      "subtitle_en": "& Styling",
+      "title_en": "Cut",
+      "detail_en": "We assess your hair texture and face shape to find the form that suits you best. Easy-to-style cuts made for everyday life.",
+      "image": "/img/uploads/hizmet-kesim.webp",
+      "price_tr": "",
+      "price_en": ""
+    },
+    {
+      "short_tr": "Doğal tonlardan cesur renklere, ışıltılı geçişler.",
+      "tags_tr": [
+        "Dip & tüm boya",
+        "Balyaj",
+        "Ombre",
+        "Röfle"
+      ],
+      "subtitle_tr": "",
+      "title_tr": "Renklendirme",
+      "detail_tr": "Ten renginize ve tarzınıza uygun tonu birlikte seçiyor, saç sağlığını koruyan profesyonel ürünlerle uyguluyoruz.",
+      "short_en": "From natural tones to bold shades, luminous blends.",
+      "tags_en": [
+        "Roots & full colour",
+        "Balayage",
+        "Ombré",
+        "Highlights"
+      ],
+      "subtitle_en": "",
+      "title_en": "Colour",
+      "detail_en": "We choose the right tone for your skin and style together, applied with professional products that protect your hair.",
+      "image": "/img/uploads/hizmet-renk.webp",
+      "price_tr": "",
+      "price_en": ""
+    },
+    {
+      "short_tr": "Yıpranmış saçlara parlaklık ve canlılık.",
+      "tags_tr": [
+        "Keratin",
+        "Brezilya fönü",
+        "Saç botoksu",
+        "Nem bakımı"
+      ],
+      "subtitle_tr": "",
+      "title_tr": "Saç Bakımı",
+      "detail_tr": "Saçınızın ihtiyacına göre seçilen bakım uygulamalarıyla elektriklenmeyi azaltır, parlaklık ve yumuşaklık kazandırırız.",
+      "short_en": "Shine and vitality for tired hair.",
+      "tags_en": [
+        "Keratin",
+        "Brazilian blowout",
+        "Hair botox",
+        "Hydration"
+      ],
+      "subtitle_en": "",
+      "title_en": "Hair Care",
+      "detail_en": "Treatments chosen for your hair's needs reduce frizz and restore shine and softness.",
+      "image": "/img/uploads/hizmet-bakim.webp",
+      "price_tr": "",
+      "price_en": ""
+    },
+    {
+      "short_tr": "En özel gününüz için kusursuz bir görünüm.",
+      "tags_tr": [
+        "Gelin saçı",
+        "Nişan & kına",
+        "Topuz",
+        "Prova"
+      ],
+      "subtitle_tr": "& Özel Gün",
+      "title_tr": "Gelin",
+      "detail_tr": "Gelinlik, aksesuar ve konseptinize uygun saç tasarımı. Düğün, nişan ve kına için önceden planlama yapmanızı öneririz.",
+      "short_en": "A flawless look for your most special day.",
+      "tags_en": [
+        "Bridal hair",
+        "Engagement",
+        "Updos",
+        "Trial"
+      ],
+      "subtitle_en": "& Occasions",
+      "title_en": "Bridal",
+      "detail_en": "Hair design to match your dress, accessories and concept. For weddings and engagements we recommend planning ahead.",
+      "image": "/img/uploads/hizmet-gelin.webp",
+      "price_tr": "",
+      "price_en": ""
+    },
+    {
+      "short_tr": "Günlükten davete, ışıltıyı tamamlayan dokunuş.",
+      "tags_tr": [
+        "Gelin makyajı",
+        "Davet makyajı",
+        "Kaş tasarımı"
+      ],
+      "subtitle_tr": "",
+      "title_tr": "Makyaj",
+      "detail_tr": "Yüz hatlarınızı öne çıkaran, fotoğrafta ve gün ışığında dengeli görünen profesyonel makyaj.",
+      "short_en": "The finishing touch, from daytime to evening.",
+      "tags_en": [
+        "Bridal make-up",
+        "Evening make-up",
+        "Brow design"
+      ],
+      "subtitle_en": "",
+      "title_en": "Make-up",
+      "detail_en": "Professional make-up that enhances your features and looks balanced both on camera and in daylight.",
+      "image": "/img/uploads/hizmet-makyaj.webp",
+      "price_tr": "",
+      "price_en": ""
+    },
+    {
+      "short_tr": "Bakımlı eller, rahat adımlar.",
+      "tags_tr": [
+        "Manikür",
+        "Pedikür",
+        "Kalıcı oje",
+        "Protez tırnak"
+      ],
+      "subtitle_tr": "& Ayak Bakımı",
+      "title_tr": "El",
+      "detail_tr": "Hijyenik ekipmanlarla manikür ve pedikür; uzun süre kalıcı, parlak sonuçlar.",
+      "short_en": "Polished hands, comfortable steps.",
+      "tags_en": [
+        "Manicure",
+        "Pedicure",
+        "Gel polish",
+        "Nail extensions"
+      ],
+      "subtitle_en": "& Feet",
+      "title_en": "Hands",
+      "detail_en": "Manicure and pedicure with hygienic tools, for long-lasting, glossy results.",
+      "image": "/img/uploads/hizmet-tirnak.webp",
+      "price_tr": "",
+      "price_en": ""
+    }
+  ],
+  "before_after": [],
+  "team": [
+    {
+      "name": "Sercan Çevik",
+      "role_tr": "Kurucu",
+      "role_en": "Founder",
+      "bio_tr": "",
+      "bio_en": "",
+      "photo": "/img/uploads/sercan-cevik.jpg"
+    },
+    {
+      "name": "Mehmet Çevik",
+      "role_tr": "Kurucu",
+      "role_en": "Founder",
+      "bio_tr": "",
+      "bio_en": "",
+      "photo": "/img/uploads/mehmet-cevik.jpg"
+    }
+  ],
+  "reviews": [],
+  "gallery": [
+    {
+      "image": "/img/uploads/galeri-1.webp",
+      "caption_tr": "Renk",
+      "caption_en": "Colour"
+    },
+    {
+      "image": "/img/uploads/galeri-2.webp",
+      "caption_tr": "Makyaj",
+      "caption_en": "Make-up"
+    },
+    {
+      "image": "/img/uploads/galeri-3.webp",
+      "caption_tr": "Doku",
+      "caption_en": "Texture"
+    },
+    {
+      "image": "/img/uploads/galeri-4.webp",
+      "caption_tr": "Fön",
+      "caption_en": "Blow-dry"
+    },
+    {
+      "image": "/img/uploads/galeri-5.webp",
+      "caption_tr": "Atmosfer",
+      "caption_en": "Atmosphere"
+    },
+    {
+      "image": "/img/uploads/galeri-6.webp",
+      "caption_tr": "Detay",
+      "caption_en": "Details"
+    }
+  ],
+  "faq": [
+    {
+      "q_tr": "Randevusuz gelebilir miyim?",
+      "a_tr": "Yoğunluğa bağlı olarak mümkün. Beklememeniz için WhatsApp'tan kısa bir mesajla randevu almanızı öneririz.",
+      "q_en": "Can I walk in without an appointment?",
+      "a_en": "Depending on availability, yes. To avoid waiting, we recommend booking with a short WhatsApp message."
+    },
+    {
+      "q_tr": "Fiyatlarınızı nasıl öğrenebilirim?",
+      "a_tr": "Fiyatlar saç uzunluğu, yoğunluğu ve uygulamaya göre değişir. WhatsApp'tan saçınızın bir fotoğrafını göndererek net bilgi alabilirsiniz.",
+      "q_en": "How can I find out your prices?",
+      "a_en": "Prices depend on hair length, density and treatment. Send us a photo of your hair on WhatsApp for an exact quote."
+    },
+    {
+      "q_tr": "Gelin saçı için ne kadar önceden randevu almalıyım?",
+      "a_tr": "Özellikle düğün sezonunda mümkün olduğunca erken iletişime geçmenizi öneririz. Prova için ayrıca bir gün planlayabiliriz.",
+      "q_en": "How far ahead should I book bridal hair?",
+      "a_en": "Especially in wedding season, please get in touch as early as possible. We can also plan a separate trial day."
+    },
+    {
+      "q_tr": "Randevumu nasıl değiştirir veya iptal ederim?",
+      "a_tr": "WhatsApp'tan haber vermeniz yeterli. Başka misafirlerimize yer açabilmemiz için mümkün olduğunca erken bildirmenizi rica ederiz.",
+      "q_en": "How do I change or cancel my appointment?",
+      "a_en": "Just let us know on WhatsApp, as early as possible so we can offer the slot to other guests."
+    },
+    {
+      "q_tr": "Kapadokya'yı ziyaret eden turistlere hizmet veriyor musunuz?",
+      "a_tr": "Elbette. Nevşehir merkezdeki salonumuzda yerli ve yabancı tüm misafirlerimizi ağırlıyoruz. Randevu için WhatsApp'tan yazabilirsiniz.",
+      "q_en": "Do you welcome tourists visiting Cappadocia?",
+      "a_en": "Of course. We welcome all local and international guests at our salon in central Nevşehir. Message us on WhatsApp to book."
+    }
+  ]
+}
